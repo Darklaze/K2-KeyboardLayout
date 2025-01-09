@@ -1,6 +1,7 @@
 Script del software Autohotkey AHKv1
 
-El script permite crear un segundoo layout en el teclado redifiniendo la función de las teclas originales
+El script permite crear un segundo layout en el teclado redifiniendo la función de las teclas originales reduce los movimientos necesarios de la mano
+concentrandose en la sección alfabetica del teclado
 
 el cambio alternado del layout se realiza con la combinación de teclas "Ctrl + Q"
 para finalizar el script "Ctrl + alt + Q"
@@ -18,4 +19,4 @@ las teclas "Z,X,C" tienen función para el control de volumen:
 
 Para el uso correcto del script se debe instalar Autohotkey
 
-Se recomienda usar la versión compilada y ubicarla en la carpteta de inicio "shell:startup" para que el script comienza al iniciar el sitema windows
+Se recomienda usar la versión compilada y ubicarla en la carpteta de inicio "shell:startup" para que el script comienza al iniciar el sistema windows
