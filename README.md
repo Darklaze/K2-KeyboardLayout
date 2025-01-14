@@ -20,3 +20,7 @@ las teclas "Z,X,C" tienen función para el control de volumen:
 Para el uso correcto del script se debe instalar Autohotkey
 
 Se recomienda usar la versión compilada y ubicarla en la carpteta de inicio "shell:startup" para que el script comienza al iniciar el sistema windows
+
+Para que el Script pueda ser ejecutado se debe instalar Autohotkey
+https://www.autohotkey.com/
+
