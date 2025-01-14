@@ -51,9 +51,12 @@ ActivateLayout2() {
     Hotkey, x, VolumeMute, On
     Hotkey, c, VolumeUp, On
 
-    ; Redefinir las teclas "R" y "F"
+    ; Redefinir las teclas "R" y "F" "E"
     Hotkey, r, SendBackspace, On
     Hotkey, f, MinimizeAll, On
+    
+    ; Redefine la tecla "E" a "ENTER"
+    Hotkey, e, SendEnter, On
 
     ; Definir el comportamiento de Shift + WASD para selección de texto
     ; Usamos el `~` para no bloquear el Shift original
@@ -82,6 +85,7 @@ DeactivateLayout2() {
     Hotkey, c, Off
     Hotkey, r, Off
     Hotkey, f, Off
+    Hotkey, e, Off
 
     ; Desactivar combinaciones Shift + WASD
     Hotkey, ~LShift & w, Off
@@ -91,6 +95,11 @@ DeactivateLayout2() {
 }
 
 ; Funciones de envío para teclas personalizadas
+
+SendEnter:
+    Send, {Enter}
+return
+
 SendSelectionUp:
     Send, +{Up} ; Enviar Shift + Up
 return
