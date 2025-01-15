@@ -19,6 +19,8 @@ x::x
 c::c
 r::r
 f::f
+q::q
+v::v
 
 ; Activar o desactivar el layout al presionar Ctrl + Q
 ^q:: 
@@ -51,12 +53,17 @@ ActivateLayout2() {
     Hotkey, x, VolumeMute, On
     Hotkey, c, VolumeUp, On
 
-    ; Redefinir las teclas "R" y "F" "E"
+    ; Redefinir las teclas "R", "F", "E" y "V"
     Hotkey, r, SendBackspace, On
     Hotkey, f, MinimizeAll, On
-    
-    ; Redefine la tecla "E" a "ENTER"
+    Hotkey, v, MaximizeActiveWindow, On
     Hotkey, e, SendEnter, On
+
+    ;La tecla "Q" realiza la funcion de abrir menu contextual
+    Hotkey, q, OpenContextMenu, On
+
+    
+
 
     ; Definir el comportamiento de Shift + WASD para selección de texto
     ; Usamos el `~` para no bloquear el Shift original
@@ -86,6 +93,8 @@ DeactivateLayout2() {
     Hotkey, r, Off
     Hotkey, f, Off
     Hotkey, e, Off
+    Hotkey, q, Off
+    Hotkey, v, Off
 
     ; Desactivar combinaciones Shift + WASD
     Hotkey, ~LShift & w, Off
@@ -95,6 +104,11 @@ DeactivateLayout2() {
 }
 
 ; Funciones de envío para teclas personalizadas
+
+OpenContextMenu:
+    Send, +{F10} ; Enviar Shift + F10 para abrir menu contextual
+return
+
 
 SendEnter:
     Send, {Enter}
@@ -174,4 +188,9 @@ return
 
 MinimizeAll:
     Send, #d ; # es la tecla de Windows
+return
+
+MaximizeActiveWindow:
+    WinRestore, A ; Restaura la ventana si esta minimizada
+    WinMaximize, A ; Maximiza ventana activa
 return
