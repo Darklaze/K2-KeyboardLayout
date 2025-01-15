@@ -1,4 +1,4 @@
-Script del software Autohotkey AHKv1
+Script del software Autohotkey AHKv2
 
 El script permite crear un segundo layout en el teclado redifiniendo la función de las teclas originales reduce los movimientos necesarios de la mano
 concentrandose en la sección alfabetica del teclado
