@@ -17,6 +17,9 @@ las teclas "Z,X,C" tienen función para el control de volumen:
   X= Silenciar 
   C= Subir volumen
 
+La tecla "Q" realiza la función de abrir el menu contextual
+La tecla "V" Maximiza la venta activa
+
 Para el uso correcto del script se debe instalar Autohotkey
 
 Se recomienda usar la versión compilada y ubicarla en la carpteta de inicio "shell:startup" para que el script comienza al iniciar el sistema windows
