@@ -1,4 +1,4 @@
-;Programa Script para layouts en teclado desarrollado en AHKv2 prueba que hice con mi amigo maruchanobed
+;Programa Script para layouts en teclado desarrollado en AHKv2 
 
 
 global Layout2Active := false
